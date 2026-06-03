@@ -195,6 +195,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## 👤 Author
 
-Built by **[Your Name]** · [GitHub](https://github.com/YOUR_USERNAME) · [LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+Built by **Parth Bahadana** · [GitHub](https://github.com/kleZ799) · [LinkedIn](https://www.linkedin.com/in/parth-bhadana-530014202/)
 
 > *Part of my AI/ML engineering portfolio demonstrating practical LLM integration, NLP pipelines, and full-stack Python development.*
