@@ -17,15 +17,15 @@ This tool automates the most time-consuming parts of SEO work by combining **Lar
 
 | Module | Description |
 |--------|-------------|
-| 🔑 **Keyword Research** | AI-generated keyword clusters, search intent classification, difficulty estimates, long-tail phrases, and content gap analysis |
-| ✍️ **Content Optimizer** | Scores existing content on 5 SEO dimensions and returns prioritised fix lists with AI-rewritten sections |
-| 📊 **SERP Analyzer** | Maps the competitive landscape for any keyword — content types, SERP features, word count targets, and ranking strategies |
-| 🏗️ **Site Auditor** | Fetches a live URL, extracts 15+ technical SEO signals, and generates a scored audit report with critical/warning/passed checks |
-| 🏷️ **Meta Tag Generator** | Produces title tags, meta descriptions, Open Graph, Twitter Card, and JSON-LD Schema markup — all optimised for the target keyword |
+| **Keyword Research** | AI-generated keyword clusters, search intent classification, difficulty estimates, long-tail phrases, and content gap analysis |
+| **Content Optimizer** | Scores existing content on 5 SEO dimensions and returns prioritised fix lists with AI-rewritten sections |
+| **SERP Analyzer** | Maps the competitive landscape for any keyword — content types, SERP features, word count targets, and ranking strategies |
+**Site Auditor** | Fetches a live URL, extracts 15+ technical SEO signals, and generates a scored audit report with critical/warning/passed checks |
+**Meta Tag Generator** | Produces title tags, meta descriptions, Open Graph, Twitter Card, and JSON-LD Schema markup — all optimised for the target keyword |
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
@@ -38,7 +38,7 @@ This tool automates the most time-consuming parts of SEO work by combining **Lar
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 seo-tool/
@@ -88,24 +88,24 @@ URL Input → requests.get() → BeautifulSoup parsing
 
 ## ⚙️ How Each Module Works
 
-### 🔑 Keyword Research
+### Keyword Research
 Takes a seed topic and target market. Sends a structured prompt to Claude asking it to act as an SEO strategist. Claude returns a JSON object with primary keywords (each annotated with intent, difficulty 1-100, and volume tier), long-tail phrases, LSI/semantic keywords, "People Also Ask"-style questions, and content gap opportunities.
 
-### ✍️ Content Optimizer
+### Content Optimizer
 Accepts raw article content and a target keyword. Claude analyses the text against five dimensions — overall SEO strength, keyword usage, readability, content structure, and uniqueness — scoring each 0-100. It then generates three tiers of recommendations (critical fixes, improvements, quick wins) plus a rewritten intro and suggested heading structure.
 
-### 📊 SERP Analyzer
+### SERP Analyzer
 Takes a keyword and optional intent filter. Claude simulates the knowledge of an experienced SERP analyst, identifying what content types dominate the results, which SERP features are likely present (Featured Snippet, PAA, Video Carousel, etc.), top ranking factors, and a concrete ranking strategy. It also calculates an estimated difficulty score.
 
-### 🏗️ Site Auditor
+### Site Auditor
 Fetches any live URL using `requests` with a browser-like user agent. `BeautifulSoup4` parses the HTML to extract: title tag, meta description, H1/H2 tags, image alt attributes, internal/external link counts, word count, canonical URL, robots meta directive, page size, and status code. These 15 signals are serialised to JSON and sent to Claude, which returns a scored audit (0-100) with issues classified as critical, warnings, or passed.
 
-### 🏷️ Meta Tag Generator
+### Meta Tag Generator
 Takes a page topic, keyword, page type, and brand name. Claude generates three title tag variants (all 50-60 chars), two meta description variants (all 140-160 chars), complete Open Graph tags, Twitter Card tags, and a JSON-LD Schema.org markup block appropriate for the page type.
 
 ---
 
-## 🚀 Quick Start (Run Locally)
+## Quick Start (Run Locally)
 
 ### Prerequisites
 - Python 3.10 or higher
@@ -147,7 +147,7 @@ Paste your Anthropic API key in the sidebar and start using the tool.
 
 ---
 
-## 🔑 Getting an Anthropic API Key
+## Getting an Anthropic API Key
 
 1. Go to [console.anthropic.com](https://console.anthropic.com)
 2. Sign up / log in
@@ -159,7 +159,7 @@ Paste your Anthropic API key in the sidebar and start using the tool.
 
 ---
 
-## 📸 Features at a Glance
+## Features at a Glance
 
 - **Real-time AI analysis** — every result is generated live by Claude
 - **Structured JSON responses** — Claude returns machine-parseable data, not free text
@@ -170,7 +170,7 @@ Paste your Anthropic API key in the sidebar and start using the tool.
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 ```
 streamlit>=1.35.0       # Web UI framework
@@ -181,13 +181,13 @@ beautifulsoup4>=4.12.0  # HTML parser for site auditor
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
 
 ---
 
-## 📄 License
+## License
 
 [MIT](LICENSE) — free to use, modify, and distribute.
 
