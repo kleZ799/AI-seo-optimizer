@@ -6,6 +6,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.35%2B-FF4B4B?logo=streamlit)](https://streamlit.io)
 [![Anthropic](https://img.shields.io/badge/LLM-Claude%20(Anthropic)-blueviolet)](https://anthropic.com)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+(_Make sure you cross checck the repo before copying_)
 
 ---
 
