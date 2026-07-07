@@ -9,11 +9,11 @@
 1. Go to https://www.python.org/downloads/
 2. Download Python 3.11 or 3.12
 3. **IMPORTANT:** During install, check ✅ "Add Python to PATH"
-4. Verify installation — open Command Prompt and type:
+4. Verify installation — open Command Prompt and type :
    ```
    python --version
    ```
-   You should see: `Python 3.11.x`
+   (You should see: `Python 3.11.x`)
 
 ---
 
