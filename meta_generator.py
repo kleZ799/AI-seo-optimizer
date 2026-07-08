@@ -144,3 +144,4 @@ Return JSON with this exact shape:
             st.markdown("### 💡 Pro Tips")
             items = "".join(f'<div class="suggestion-item success">💡 {t}</div>' for t in data["tips"])
             st.markdown(f'<div class="section-card">{items}</div>', unsafe_allow_html=True)
+            
